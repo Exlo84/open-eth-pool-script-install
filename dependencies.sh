@@ -4,7 +4,7 @@
 #                           GOLANG                         #
 # **********************************************************
 
-VERSION="1.10.3"
+VERSION="1.13.5"
 
 print_help() {
     echo "Usage: bash goinstall.sh OPTIONS"
@@ -180,7 +180,10 @@ add-apt-repository -y ppa:ethereum/ethereum
 
 get_update
 
-apt-get install ethereum
+wget -N https://github.com/Ether1Project/Ether1/releases/download/1.3.1/ether-1-linux-1.3.1.tar.gz
+tar xfvz ether-1-linux-1.3.1.tar.gz
+rm ether-1-linux-1.3.1.tar.gz
+sudo mv geth /usr/local/bin/geth 
 
 if [ "$1" == "--create" ]; then
     geth account new
@@ -191,8 +194,7 @@ echo -e '\033[1;92mMaking a geth service'
 echo "[Unit]
 Description=Ethereum Go Client
 [Service]
-ExecStart=/usr/bin/geth --fast --cache=16 --datadir=/mnt/eth-blockchain --identity=@bkawk --keystore=/mnt/eth-blockchain --rpc --rpcport=8882 --rpccorsdomain=* --rpcapi=web3,db,net,eth
-Restart=always
+ExecStart=/usr/bin/geth --fast --cache=16 --datadir=/mnt/eth-blockchain --identity=@bkawk --keystore=/mnt/eth-blockchain --rpc --rpcport=8545 --rpccorsdomain=* --rpcapi=web3,db,net,ethRestart=always
 RestartSec=30
 Type=simple
 User=root
