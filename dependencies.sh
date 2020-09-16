@@ -104,7 +104,7 @@ if ! [ -x "$(command -v node)" ]; then
     apt-get install -y build-essential
     
     # Getting the lastest resource.
-    curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
+    curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
     apt-get install -y nodejs
     
 fi
