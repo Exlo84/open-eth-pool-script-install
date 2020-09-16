@@ -26,7 +26,7 @@ Must open a new terminal because the dependencies are recently installed and gol
 $ sudo ./configuration.sh
 ```
 
-Wait for the buliding of the project to be complete and when it will complete it will run the open-etherium-pool then open a new terminal and run the front end without sudo
+Wait for the buliding of the project to be complete and when it will complete it will run the open-ethereum-pool then open a new terminal and run the front end without sudo
 
 ```sh
 $ ./frontend.sh
@@ -38,4 +38,4 @@ The script works under my environment when no dependencies are installed and get
 
    [repo]: <https://github.com/sammy007/open-ethereum-pool>
    [www]: <https://github.com/sammy007/open-ethereum-pool/tree/master/www>
-   [config]: <https://github.com/HamzaAnis/open-eth-pool-script-install/blob/master/configuration.sh#L14>
+   [config]: <https://github.com/Exlo84/open-eth-pool-script-install/blob/master/configuration.sh>
