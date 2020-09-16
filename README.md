@@ -20,7 +20,7 @@ Install the dependencies. It will take time --64 flag is for the system architec
 $ sudo ./dependencies.sh --64
 ```
 
-Must open a new terminal because the dependencies are recently installed and golang is needed to build the open-etherium-pool.After opening the new terminal. One thing need to be carefully checked the configs in the [configuration.sh][config] according to your pool. 
+Must open a new terminal because the dependencies are recently installed and golang is needed to build the open-ethereum-pool. After opening the new terminal. One thing need to be carefully checked the configs in the [configuration.sh][config] according to your pool. 
 
 ```sh
 $ sudo ./configuration.sh
