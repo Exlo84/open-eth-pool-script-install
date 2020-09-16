@@ -12,7 +12,7 @@ cd open-ethereum-pool && make
 
 echo -e "{
 	\"threads\": 2,
-	\"coin\": \"eth\",
+	\"coin\": \"etho\",
 	\"name\": \"main\",
 
 	\"proxy\": {
