@@ -7,7 +7,10 @@ git clone https://github.com/sammy007/open-ethereum-pool.git
 
 echo -e "\033[32mMake can time as it will download the packages\n"
 sudo chmod -R 777 .
-cd open-ethereum-pool && make
+cd open-ethereum-pool 
+export GOROOT=/usr/local/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+make
 # This is the config file
 
 echo -e "{
