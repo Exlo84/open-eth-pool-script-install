@@ -176,7 +176,6 @@ echo 999999 | sudo tee -a /proc/sys/fs/inotify/max_user_watches && echo 999999 |
 echo -e "\033[32mInstalling geth"
 
 apt-get install software-properties-common
-add-apt-repository -y ppa:ethereum/ethereum
 
 get_update
 
@@ -192,9 +191,9 @@ fi
 echo -e '\033[1;92mMaking a geth service'
 
 echo "[Unit]
-Description=Ethereum Go Client
+Description=Etho Go Client
 [Service]
-ExecStart=/usr/bin/geth --fast --cache=16 --datadir=/mnt/eth-blockchain --identity=@bkawk --keystore=/mnt/eth-blockchain --rpc --rpcport=8545 --rpccorsdomain=* --rpcapi=web3,db,net,ethRestart=always
+ExecStart=/usr/local/bin/geth --fast --cache=16 --datadir=/mnt/eth-blockchain --identity=@bkawk --keystore=/mnt/eth-blockchain --rpc --rpcport=8545 --rpccorsdomain=* --rpcapi=web3,db,net,ethRestart=always
 RestartSec=30
 Type=simple
 User=root
