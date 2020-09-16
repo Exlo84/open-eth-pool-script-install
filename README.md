@@ -1,4 +1,4 @@
-# Open Eth Pool Script Setup and Install
+# Open Etho Pool Script Setup and Install
 
 This repo will help you to install [open-ethereum-pool][repo]
 # Feautures
