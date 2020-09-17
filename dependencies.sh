@@ -174,7 +174,7 @@ get_update
 wget -N https://github.com/Ether1Project/Ether1/releases/download/1.3.1/ether-1-linux-1.3.1.tar.gz
 tar xfvz ether-1-linux-1.3.1.tar.gz
 rm ether-1-linux-1.3.1.tar.gz
-sudo mv geth /usr/local/bin/geth 
+sudo mv build/bin/geth /usr/local/bin/geth
 
 if [ "$1" == "--create" ]; then
     geth account new
